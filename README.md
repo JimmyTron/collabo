@@ -1,4 +1,4 @@
-# COLLABO
+# COLLABORATION TOOLS
 we launched terminal
 we moved to the desktop >cd Desktop
 we created a folder >mkdir <new>
