@@ -9,3 +9,4 @@ we committed a change to our repository. >git commit -m <new>
 we checked the status. >git status
 we created branches. >git checkout -b <new>
 we changed into a different branch. > 
+
