@@ -1,26 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
 .clipped {
-  width: 220px;
+  width: 2200px;
   height: 150px;
-  padding: 10px;
-  background-color: yellowgreen;
+  padding: 5px;
+  background-color: #ffffff;
+  opacity: 1px solid red ; 
   background-image: url(/https://medium.com/cs-note/git-and-git[...]-for-beginners-i-tutorial-263caa01f9c3);
-  border: 20px solid rgba(0,0,0,0.3);
+  border: 2px solid rgba(0,0,0,0.3);
   background-clip: border-box;
   background-origin: border-box;
 }
 </style>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Jimmy Tron, Kherld Hussein,...and you"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Git and Github Lesssons">
+    <meta name="keyword" content="Beginner's lesson on Git and Github classroom @ Tech-Hub">
     <title>Collaboration Tools</title>
 </head>
 <body>
-    <h1><div class="clipped">Introduction to <code>Git & Github </code> as Collaboration Tools</h1></div>
+	<div text-align: center;
+    <h1><div class="clipped">Introduction to <code>Git & Github </code> as Collaboration Tools</h1></div></h1></div><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 <ul><h3>Importance of git</h3>
     <li>helps in collaborating </li>
     <li>helps in problem solving</li>
@@ -28,6 +71,7 @@
     <li>hosting projects </li>
     <li>version control </li> 
 </ul>
+
 <ul><h3>Basic git commands</h3>
     <li>git clone</li>
     <li>git init</li>
@@ -83,9 +127,9 @@
     </ul>
     <style>
 div.bounce {
-  width: 100px;
+  width: 10px;
   padding: 20px;
-  background: gold;
+  background: cyan;
   position: relative;
   animation: bounce 1s ease-in 2s 6 alternate none;
 }
@@ -95,14 +139,14 @@ div.bounce {
 	  left: 0px;
 	  }
 	to {
-	  top: 150px;
-	  left: 150px;
+	  top: 15px;
+	  left: 20px;
 	}
 }
 </style>
-<div class="bounce"><h2>Group Actions</h2></div>
+<div class="bounce"><h2><a style="color:black;">Gr</a><a style="color:cyan;">oup </a><a style="color:black;">Ac</a><a style="color:cyan;">tions</a></h2></div>
     
-        <ul><h3>actions performed:</h3>
+        <ul><h3>Actions Performed:</h3>
                <li>we launched terminal</li>
                 <li>we moved to the desktop - cd Desktop</li>
                 <li>we created a folder - mkdir [new-folder] </li>
@@ -114,6 +158,6 @@ div.bounce {
                 <li>we created branches. - git checkout -b [new-folder]</li>
                 <li>we changed into a different branch. - git checkout </li>
         </ul>
+        
+    <a href="https://github.com/kisumu-poly-tech-hub">
 </p>
-</body>
-</html>
