@@ -3,7 +3,7 @@
 ---
 ---
 
-| Telegram Chat
+| Join Our Community
 |---|
 |  [![Telegram](https://telegram.org/img/t_logo.png)](https://kisumu-poly-tech-hub.github.io/collaboration-tools/)
 
@@ -26,4 +26,9 @@
 
 
 [Contribute](https://kisumu-poly-tech-hub.github.io/collaboration-tools/ "tech-hub.io")
+
+
+> This project exists thanks to all the people who contribute.
+
+
   
