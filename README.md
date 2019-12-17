@@ -1,5 +1,5 @@
----
-> # VERSION CONTROL WITH GIT
+
+# VERSION CONTROL WITH GIT :gears:
 ---
 ---
 
