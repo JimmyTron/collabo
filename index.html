@@ -1,78 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-.clipped {
-  width: 2200px;
-  height: 150px;
-  padding: 5px;
-  background-color: #ffffff;
-  opacity: 1px solid red ; 
-  background-image: url(/https://medium.com/cs-note/git-and-git[...]-for-beginners-i-tutorial-263caa01f9c3);
-  border: 2px solid rgba(0,0,0,0.3);
-  background-clip: border-box;
-  background-origin: border-box;
-}
-</style>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="author" content="Jimmy Tron, Kherld Hussein,...and you"> 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Git and Github Lesssons">
-    <meta name="keyword" content="Beginner's lesson on Git and Github classroom @ Tech-Hub">
-    <title>Collaboration Tools</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Git and Github Lesssons">
+  <meta name="keyword" content="Beginner's lesson on Git and Github classroom @ Tech-Hub">
+  <!-- css stylesheet -->
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Version control with git</title>
 </head>
+
 <body>
 
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script></body>
+  <!-- js scriptsrcps -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function() {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function(msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    } else {
+      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+  </script>
 
-<ul><h3>Importance of git</h3>
+  <p>Git is the free and open source distributed version control system that's responsible for everything GitHub
+    related that happens locally on your computer.</p>
+  <ul>
+    <h3>Importance of git</h3>
     <li>helps in collaborating </li>
     <li>helps in problem solving</li>
     <li>easen workflow of a system</li>
     <li>hosting projects </li>
-    <li>version control </li> 
-</ul>
+    <li>version control </li>
+  </ul>
 
-<ul><h3>Basic git commands</h3>
+  <ul>
+    <h3>Basic git commands</h3>
     <li>git clone</li>
     <li>git init</li>
     <li>git add</li>
@@ -94,72 +87,69 @@
     <li>git fetch</li>
     <li>git pull</li>
     <li>git push</li>
-</ul>
-<p><h2>These are common Git commands used in various situations:</h2>
-    <ul><h3>start a working area (see also: git help tutorial)</h3>
-        <li>clone - Clone a repository into a new directory</li>
-        <li>init - Create an empty Git repository or reinitialize an existing one</li>
-    </ul> 
-    <ul><h3>work on the current change (see also: git help everyday)</h3>  
-        <li>add - Add file contents to the index</li>
-        <li>mv - Move or rename a file, a directory, or a symlink</li>
-        <li>reset - Reset current HEAD to the specified state</li>   
-    </ul>
-    <ul><h3>examine the history and state (see also: git help revisions)</h3>
-        <li>bisect - Use binary search to find the commit that introduced a bug</li>
-        <li>grep - Print lines matching a pattern</li>
-        <li>log - Show commit logs</li>
-        <li>show - Show various types of objects</li>
-        <li>status - Show the working tree status</li>
-    </ul>
-    <ul><h3>grow, mark and tweak your common history</h3>
-        <li>branch - List, create, or delete branches</li>
-        <li>checkout - Switch branches or restore working tree files</li>
-        <li>commit - Record changes to the repository</li>
-        <li>diff - Show changes between commits, commit and working tree, etc</li>
-        <li>merge - Join two or more development histories together</li>
-        <li>tag - Create, list, delete or verify a tag object signed with GPG</li>
-    </ul>
-    <ul><h3>collaborate (see also: git help workflows)</h3>
-        <li>fetch - Download objects and refs from another repository</li>
-        <li>pull - Fetch from and integrate with another repository or a local branch</li>
-        <li>push - Update remote refs along with associated objects</li>
-    </ul>
-    <style>
-div.bounce {
-  width: 10px;
-  padding: 20px;
-  background: cyan;
-  position: relative;
-  animation: bounce 1s ease-in 2s 6 alternate none;
-}
-@keyframes bounce {
-	from {
-	  top: 0px;
-	  left: 0px;
-	  }
-	to {
-	  top: 15px;
-	  left: 20px;
-	}
-}
-</style>
-<div class="bounce"><h2> Group Actions</h2></div>
-    
-        <ul><h3>Actions Performed:</h3>
-               <li>we launched terminal</li>
-                <li>we moved to the desktop - cd Desktop</li>
-                <li>we created a folder - mkdir [new-folder] </li>
-                <li>we initialised our folder - git init</li>
-                <li>we created a file - pico [new-folder]</li>
-                <li>we added a file to the working tree. - git add -A</li>
-                <li>we committed a change to our repository. - git commit -m <[new-folder]></li>
-                <li>we checked the status. - git status</li>
-                <li>we created branches. - git checkout -b [new-folder]</li>
-                <li>we changed into a different branch. - git checkout </li>
-        </ul>
-        
-    <!-- <a href="https://github.com/kisumu-poly-tech-hub"> -->
-</p>
+  </ul>
+
+
+  <p>
+  <h2>These are common Git commands used in various situations:</h2>
+  <ul>
+    <h3>start a working area (see also: git help tutorial)</h3>
+    <li>clone - Clone a repository into a new directory</li>
+    <li>init - Create an empty Git repository or reinitialize an existing one</li>
+  </ul>
+  <ul>
+    <h3>work on the current change (see also: git help everyday)</h3>
+    <li>add - Add file contents to the index</li>
+    <li>mv - Move or rename a file, a directory, or a symlink</li>
+    <li>reset - Reset current HEAD to the specified state</li>
+  </ul>
+  <ul>
+    <h3>examine the history and state (see also: git help revisions)</h3>
+    <li>bisect - Use binary search to find the commit that introduced a bug</li>
+    <li>grep - Print lines matching a pattern</li>
+    <li>log - Show commit logs</li>
+    <li>show - Show various types of objects</li>
+    <li>status - Show the working tree status</li>
+  </ul>
+
+
+  <ul>
+    <h3>grow, mark and tweak your common history</h3>
+    <li>branch - List, create, or delete branches</li>
+    <li>checkout - Switch branches or restore working tree files</li>
+    <li>commit - Record changes to the repository</li>
+    <li>diff - Show changes between commits, commit and working tree, etc</li>
+    <li>merge - Join two or more development histories together</li>
+    <li>tag - Create, list, delete or verify a tag object signed with GPG</li>
+  </ul>
+  <ul>
+    <h3>collaborate (see also: git help workflows)</h3>
+    <li>fetch - Download objects and refs from another repository</li>
+    <li>pull - Fetch from and integrate with another repository or a local branch</li>
+    <li>push - Update remote refs along with associated objects</li>
+  </ul>
+
+  <div class="bounce">
+    <h2> Group Actions</h2>
+  </div>
+
+  <ul>
+    <h3>Actions Performed:</h3>
+    <li>we launched terminal</li>
+    <li>we moved to the desktop - cd Desktop</li>
+    <li>we created a folder - mkdir [new-folder] </li>
+    <li>we initialised our folder - git init</li>
+    <li>we created a file - pico [new-folder]</li>
+    <li>we added a file to the working tree. - git add -A</li>
+    <li>we committed a change to our repository. - git commit -m <[new-folder]>
+    </li>
+    <li>we checked the status. - git status</li>
+    <li>we created branches. - git checkout -b [new-folder]</li>
+    <li>we changed into a different branch. - git checkout </li>
+  </ul>
+  </p>
 </body>
+
+<!-- <a href="https://github.com/kisumu-poly-tech-hub"> -->
+
 </html>

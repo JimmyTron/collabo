@@ -1,0 +1,31 @@
+.clipped {
+  width: 2200px;
+  height: 150px;
+  padding: 5px;
+  background-color: #ffffff;
+  opacity: 1px solid red;
+  background-image: url(/https://medium.com/cs-note/git-and-git[...]-for-beginners-i-tutorial-263caa01f9c3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-clip: border-box;
+  background-origin: border-box;
+}
+
+.bounce {
+  width: 10px;
+  padding: 20px;
+  background: cyan;
+  position: relative;
+  animation: bounce 1s ease-in 2s 6 alternate none;
+}
+
+@keyframes bounce {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+
+  to {
+    top: 15px;
+    left: 20px;
+  }
+}
