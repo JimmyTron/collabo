@@ -1,3 +1,16 @@
+body{
+  background-color: #EBE6EC;
+  padding: 1rem;
+}
+h1{
+  letter-spacing: .8rem;
+  text-align: center;
+  /* text-decoration: underline; */
+
+}
+.pro{
+  text-decoration: underline;
+}
 .clipped {
   width: 2200px;
   height: 150px;
@@ -10,6 +23,10 @@
   background-origin: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 .bounce {
   width: 10px;
   padding: 20px;
@@ -17,6 +34,7 @@
   position: relative;
   animation: bounce 1s ease-in 2s 6 alternate none;
 }
+.container{background-color: #F0EBEE;}
 
 @keyframes bounce {
   from {
