@@ -57,20 +57,20 @@
   <p> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an introduction to verion control for absolute beginners,this tutorial is designed
     to teach the common foundations of <span class="pro">pro</span>gramming to as broad as plausible. It is aimed both at those who work with software developers and those who aspire to become developers themselves.</p>
   <p>Version Control is about the management of multiple versions of a
-    project. To manage a version, each change (addition, edition, or removal) to the files in a
-    project must be tracked. Version Control records each change made to a file (or a group
-    of files) and offers a way to undo or roll back each change.</p>
+    project. To manage a version, each change [addition, edition, or removal] to the files in a
+    project must be tracked. Version Control records each change made to a file [or a group
+    of files] and offers a way to undo or roll back each change.</p>
 
   <p>Git is the free and <em>open source</em> distributed version control system
     that's responsible for everything GitHub
     related that happens locally on your computer.
     Git stretches the very notion of
-    version control systems (VCS) by its ability to offer almost all of
+    version control systems [VCS] by its ability to offer almost all of
     its features for use offline and without a central server.</p>
 
   <p>We will start looking at the basic git commands to help us get started. This will start
-    by installing git in our system. head over to <a href="https://github.com">github </a> and create a free account.
-    If you dont have git installed in your system clic <a href="https://git-scm.com">here</a> to install , the steps are priety easy and clear.We will
+    by installing git in our system, and creating an github account. click here to create a free <a href="https://github.com">github</a> account.
+    If you dont have git installed in your system [<em>recommended for windows users</em>] click <a href="https://git-scm.com">here</a> to install , the steps are priety easy and clear.We will
     cover installation in linux which similar to macOS, as for windows users , you will download the binary from the link above.</p>
   <p> for linux user type:</p>
   <img src="images/gibunt.png" alt="linux installation image">
@@ -79,23 +79,65 @@
   </p><img src="images/macinst.png" alt="macOS installation image">
 
   <p>From a command prompt <em>[terminal or CMD ],</em> change directories to
-    either a blank folder or an existing project that you want to put under version control.
-    Then initialize the directory as a Git repository by typing the following command:</p>
-
+    your desktop , development folder or an existing project that you want to put under version control.
+    Then we proceed from there by typing the following command:</p>
+  <h6>Don't miss the following article on <a href="command.html">command line</a> </h6>
   <div class="container">
     <ul>
-      <li>git init</li>
+      <li>mkdir git_docs</li>
+      <li>cd git_docs</li>
       <li>touch README.md</li>
+      <li>nano README.md</li>
+      <li>git init</li>
       <li>git add .</li>
-      <li>git commit –m ’The first commit‘</li>
+      <li>git commit –m "The first commit"</li>
     </ul>
 
   </div>
-  <p>The first command in the sequence, init, builds a .git directory that
+  <p>The first command in the sequence, mkdir, creates a new folder where we will store all our project files. You may want to proceed with your existing project, or create a folder with the different name as well.</p>
+  <p>Next, cd [<em>change directory</em>] gets us into the new folder we've just created.</p>
+  <p>The next command creates an empty file in the directory named README.md.
+    You can skip
+    this part if you decided to proceed with a repository from a directory with files in it.
+  </p>
+
+  <p>The next command opens a test editor with a file name created previously, you may use any of your choice eg. <em>Vi, Vim, Pico</em> or even the most basic but out of the CLI [<em>Command Line Interface</em>] called notepad.
+    Inside the file, you may write a short story of your life or most interesting code you've ever write in your life without bugs. However,
+    you may prefer to keep it simple and write all the new
+    commands you've learnt so far with their meaning the way you've understood them.</p>
+
+  <p>Git init, builds a .git directory that
     contains all the metadata and repository history. Unlike
     many other version control systems, Git uniquely stores everything in just
     a single directory at the top of the project.</p>
 
+  <p>Following the directory initialization, the add command with the dot wildcard tells Git to start
+    tracking changes for the current directory, its files, and for all folders
+    beneath, if any exist. </p>
+
+  <p>Lastly, the commit function takes all previous additions and makes
+    them permanent in the repository’s history in a transactional action.
+    Rather than letting Git prompt the user via the default text editor,
+    the -m option preemptively supplies the commit message to be
+    saved alongside the committed files.</p>
+
+  <img src="images/gitdocs.png" alt="git_docs image">
+
+  <p>It is amazing and exciting to be able to truthfully say that you can use
+    the basics of Git for locally versioning files with just these commands.<br>
+    What if we want to <strong>clone</strong> a remote repository or contribute into another people's project ...?
+    An equally common use case for Git is starting from someone else’s
+    repository history.<br>
+    The syntax to pull down a local copy of an existing repo is: </p>
+  <div class="container">
+    <em> git clone https://github.com/kisumu-poly-tech-hub/collaboration-tools.git <br>
+      git clone git@github.com:kisumu-poly-tech-hub/collaboration-tools.git <br>
+      git clone git://github.com/kisumu-poly-tech-hub/collaboration-tools.git</em>
+  </div>
+  <p>The clone command performs several subtasks under the hood. It sets up a remote (a Git repository address bookmark) named origin
+    that points to the location <strong>https://github.com/kisumu-poly-tech-hub/collaboration-tools.git</strong>. Next, clone asks this location for the contents of its entire repository. Git copies those objects in a zlib-compressed
+    manner over the network to the requestor’s local disk. Lastly, lone switches to a branch named master,
+    as the current working copy.</p>
   <ul>
     <p>we'll continue with the rest of the commads and many other more in details.</p>
 
