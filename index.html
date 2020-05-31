@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Git and Github Lesssons">
-  <meta name="keyword" content="Beginner's lesson on Git and Github classroom @ Tech-Hub">
+  <meta name="keyword" content="Beginner's lesson on Version Control Git and Github">
   <!-- css stylesheet -->
 
   <link rel="stylesheet" href="css/styles.css">
@@ -69,18 +69,34 @@
     its features for use offline and without a central server.</p>
 
   <p>We will start looking at the basic git commands to help us get started. This will start
-    by installing git in our system, and creating an github account. click here to create a free <a href="https://github.com">github</a> account.
-    If you dont have git installed in your system [<em>recommended for windows users</em>] click <a href="https://git-scm.com">here</a> to install , the steps are priety easy and clear.We will
-    cover installation in linux which similar to macOS, as for windows users , you will download the binary from the link above.</p>
+    by installing git in our system,<br>
+    for windows users you may proceed to <a href="https://windows.github.com">git for windows</a>,<br>
+    for Mac users click the following <a href="https://mac.github.com">link</a>,<br>
+    as for linux users, Git with your package manager might be a piece of cake for you.
+    For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
+    The installation proceess very simple in all the operating systems. you may also want visit <a href="http://git-scm.com">site</a>
+    git for all platforms.
+    We will
+    cover installation in linux which similar to macOS, as for windows users, you will download the binary from the link above.</p>
   <p> for linux user type:</p>
   <img src="images/gibunt.png" alt="linux installation image">
   <p>
     as for macOS users proceed by:
   </p><img src="images/macinst.png" alt="macOS installation image">
 
+  <p>After the installation we'll create a github account. click here to create a free <a href="https://github.com">github</a> account,
+    then we will configure our account we've just created to used across all local repositories.</p>
+
+  <div class="container">
+    git config --global user.name [user-name] <br>
+    git config --global user.email [user-email] <br>
+    git config --global color.ui auto [optional]
+  </div>
+
   <p>From a command prompt <em>[terminal or CMD ],</em> change directories to
     your desktop , development folder or an existing project that you want to put under version control.
     Then we proceed from there by typing the following command:</p>
+
   <h6>Don't miss the following article on <a href="command.html">command line</a> </h6>
   <div class="container">
     <ul>
@@ -123,7 +139,7 @@
 
   <img src="images/gitdocs.png" alt="git_docs image">
 
-  <p>It is amazing and exciting to be able to truthfully say that you can use
+  <p>It is amazing and exciting ☺ to be able to truthfully say that you can use
     the basics of Git for locally versioning files with just these commands.<br>
     What if we want to <strong>clone</strong> a remote repository or contribute into another people's project ...?
     An equally common use case for Git is starting from someone else’s
@@ -168,40 +184,40 @@
 
   <h2>These are common Git commands used in various situations:</h2>
   <ul>
-    <h3>start a working area (see also: git help tutorial)</h3>
-    <li>clone - Clone a repository into a new directory</li>
-    <li>init - Create an empty Git repository or reinitialize an existing one</li>
+    <h3>start a working area</h3>
+    <li>clone - Retrieve an entire repository from a hosted location via URL</li>
+    <li>init - Initialize an existing directory as a Git repository</li>
   </ul>
   <ul>
-    <h3>work on the current change (see also: git help everyday)</h3>
-    <li>add - Add file contents to the index</li>
-    <li>mv - Move or rename a file, a directory, or a symlink</li>
-    <li>reset - Reset current HEAD to the specified state</li>
+    <h3>work on the current change</h3>
+    <li>add - Add a file as it looks now to your next commit (stage)</li>
+    <li>mv - Change an existing file path and stage the move</li>
+    <li>reset - Unstage a file while retaining the changes in working directory</li>
   </ul>
   <ul>
-    <h3>examine the history and state (see also: git help revisions)</h3>
+    <h3>examine the history and state </h3>
     <li>bisect - Use binary search to find the commit that introduced a bug</li>
     <li>grep - Print lines matching a pattern</li>
-    <li>log - Show commit logs</li>
-    <li>show - Show various types of objects</li>
-    <li>status - Show the working tree status</li>
+    <li>log - Show the commit history for the currently active branch</li>
+    <li>show - Show any object in Git in human-readable format</li>
+    <li>status - Show modified files in working directory, staged for your next commit</li>
   </ul>
 
 
   <ul>
     <h3>grow, mark and tweak your common history</h3>
-    <li>branch - List, create, or delete branches</li>
-    <li>checkout - Switch branches or restore working tree files</li>
-    <li>commit - Record changes to the repository</li>
-    <li>diff - Show changes between commits, commit and working tree, etc</li>
-    <li>merge - Join two or more development histories together</li>
+    <li>branch - List your branches. a * will appear next to the currently active branch</li>
+    <li>checkout - Switch to another branch and check it out into your working directory</li>
+    <li>commit - Record your staged content as a new commit snapshot</li>
+    <li>diff - Show what is changed but not staged, etc</li>
+    <li>merge - Join the specified branch’s history into the current one</li>
     <li>tag - Create, list, delete or verify a tag object signed with GPG</li>
   </ul>
   <ul>
-    <h3>collaborate (see also: git help workflows)</h3>
-    <li>fetch - Download objects and refs from another repository</li>
-    <li>pull - Fetch from and integrate with another repository or a local branch</li>
-    <li>push - Update remote refs along with associated objects</li>
+    <h3>collaborate</h3>
+    <li>fetch - Download all the branches from that Git remote</li>
+    <li>pull - Fetch and merge any commits from the tracking remote branch</li>
+    <li>push - Update local branch commits to the remote repository branch</li>
   </ul>
 
   <div class="bounce">
