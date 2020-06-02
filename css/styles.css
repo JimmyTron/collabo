@@ -1,18 +1,22 @@
 body {
-  background-color: #EBE6EC;
+  background-color: #AAE0E5;
   padding: 1rem;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* height: 100vh; */
+  margin: 3rem;
 }
 
 h1 {
   letter-spacing: .8rem;
   text-align: center;
   line-height: 1.5;
-  /* text-decoration: underline; */
 }
 
-#cmd{
-  background-color: #EBE6EC;
+#cmd {
+  background-color: #7289DA;
 }
+
 .pro {
   line-height: 1.5;
   text-decoration: underline;
@@ -32,17 +36,23 @@ h1 {
 
 p {
   line-height: 1.5;
+  text-align: left;
 }
 
 a {
   text-decoration: none;
   line-height: 1.5;
+  color: #7289DA;
+}
+
+a:hover {
+  color: #18354c;
 }
 
 .bounce {
   width: 10px;
   padding: 20px;
-  background: #EBE6EC;
+  background: #AAE0E5;
   position: relative;
   animation: bounce 1s ease-in 2s 6 alternate none;
 }
@@ -52,10 +62,14 @@ a {
   line-height: 1.5;
 }
 
+.mb-2, .my-2 {
+  margin-bottom: .5625rem;
+}
+
 @keyframes bounce {
   from {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 
   to {
