@@ -5,53 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Git and Github Lesssons">
-  <meta name="keyword" content="Beginner's lesson on Version Control Git and Github">
+  <meta name="description" content="Learn Version Control with Git and Github to be a better programmer">
+  <meta name="keyword" content=" ...be the future programmer">
   <!-- css stylesheet -->
 
   <link rel="stylesheet" href="css/styles.css">
-  <title>Version control with git</title>
+  <title>Version Control With Git</title>
 </head>
 
 <body>
 
   <!-- js scriptsrcps -->
-  <script type="text/javascript">
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-      (function() {
-        function refreshCSS() {
-          var sheets = [].slice.call(document.getElementsByTagName("link"));
-          var head = document.getElementsByTagName("head")[0];
-          for (var i = 0; i < sheets.length; ++i) {
-            var elem = sheets[i];
-            var parent = elem.parentElement || head;
-            parent.removeChild(elem);
-            var rel = elem.rel;
-            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-            }
-            parent.appendChild(elem);
-          }
-        }
-        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-        var address = protocol + window.location.host + window.location.pathname + '/ws';
-        var socket = new WebSocket(address);
-        socket.onmessage = function(msg) {
-          if (msg.data == 'reload') window.location.reload();
-          else if (msg.data == 'refreshcss') refreshCSS();
-        };
-        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-          console.log('Live reload enabled.');
-          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-        }
-      })();
-    } else {
-      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-    // ]]>
-  </script>
+
   <h1>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
   <h4> <em>A tutorial introduction to git. </em> </h4>
   <p> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an introduction to <strong>git</strong> for absolute beginners,this tutorial is designed
@@ -71,14 +36,14 @@
   <p>We will start looking at the basic git commands to help us get started. This will start
     by installing git in our system,<br>
     for windows users you may proceed to <a href="https://windows.github.com">git for windows</a>,<br>
-    for Mac users click the following <a href="https://mac.github.com">link</a>,<br>
+    Mac users click the following for <a href="https://mac.github.com">macOS</a>,<br>
     as for linux users, Git with your package manager might be a piece of cake for you.
     For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
-    The installation proceess very simple in all the operating systems. you may also want visit <a href="http://git-scm.com">site</a>
-    git for all platforms.
+    The installation proceess very simple in all the operating systems. you may also want visit <a href="http://git-scm.com">git for all platforms</a>
+    .
     We will
     cover installation in linux which similar to macOS, as for windows users, you will download the binary from the link above.</p>
-  <p> for linux user type:</p>
+  <p> for linux users [<em>Debian-based destros</em>] type:</p>
   <img src="images/gibunt.png" alt="linux installation image">
   <p>
     as for macOS users proceed by:
@@ -139,9 +104,9 @@
 
   <img src="images/gitdocs.png" alt="git_docs image">
 
-  <p>It is amazing and exciting ☺ to be able to truthfully say that you can use
-    the basics of Git for locally versioning files with just these commands.<br>
-    What if we want to <strong>clone</strong> a remote repository or contribute into another people's project ...?
+  <p>It is amazing and exciting ☺ to be able to truthfully say that I can use
+    the basics of Git for locally versioning of files with just these commands.<br>
+    What if we want to <strong>clone</strong> a remote repository, or contribute into other people's projects ...?
     An equally common use case for Git is starting from someone else’s
     repository history.<br>
     The syntax to pull down a local copy of an existing repo is: </p>
@@ -184,18 +149,18 @@
 
   <h2>These are common Git commands used in various situations:</h2>
   <ul>
-    <h3>start a working area</h3>
+    <h3>Start a working area</h3>
     <li>clone - Retrieve an entire repository from a hosted location via URL</li>
     <li>init - Initialize an existing directory as a Git repository</li>
   </ul>
   <ul>
-    <h3>work on the current change</h3>
+    <h3>Work on the current change</h3>
     <li>add - Add a file as it looks now to your next commit (stage)</li>
     <li>mv - Change an existing file path and stage the move</li>
     <li>reset - Unstage a file while retaining the changes in working directory</li>
   </ul>
   <ul>
-    <h3>examine the history and state </h3>
+    <h3>Examine the history and state </h3>
     <li>bisect - Use binary search to find the commit that introduced a bug</li>
     <li>grep - Print lines matching a pattern</li>
     <li>log - Show the commit history for the currently active branch</li>
@@ -205,7 +170,7 @@
 
 
   <ul>
-    <h3>grow, mark and tweak your common history</h3>
+    <h3>Grow, mark and tweak your common history</h3>
     <li>branch - List your branches. a * will appear next to the currently active branch</li>
     <li>checkout - Switch to another branch and check it out into your working directory</li>
     <li>commit - Record your staged content as a new commit snapshot</li>
@@ -214,25 +179,25 @@
     <li>tag - Create, list, delete or verify a tag object signed with GPG</li>
   </ul>
   <ul>
-    <h3>collaborate</h3>
+    <h3>Collaborate</h3>
     <li>fetch - Download all the branches from that Git remote</li>
     <li>pull - Fetch and merge any commits from the tracking remote branch</li>
     <li>push - Update local branch commits to the remote repository branch</li>
   </ul>
 
   <div class="bounce">
-    <h2> Group Actions</h2>
+    <h2>Keep Calm And <strong> <em>git push</em> </strong> </h2>
   </div>
 
   <ul>
     <h3>Recap:</h3>
     <li>we launched terminal</li>
-    <li>we moved to the desktop - cd Desktop</li>
+    <li>we moved to the desktop - cd Desktop [working-area]</li>
     <li>we created a folder - mkdir [new-folder] </li>
     <li>we initialised our folder - git init</li>
-    <li>we created a file - pico [new-folder]</li>
+    <li>we created a file - pico [file-name]</li>
     <li>we added a file to the working tree. - git add .</li>
-    <li>we committed a change to our repository. - git commit -m <[new-folder]>
+    <li>we committed a change to our repository. - git commit -m [commit-message]
     </li>
   </ul>
 
