@@ -23,7 +23,7 @@
   <h1>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
   <h4> <em>A tutorial introduction to git. </em> </h4>
   <p> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an introduction to <strong>git</strong> for absolute beginners,this tutorial is designed
-    to teach the common foundations of <span class="pro">pro</span>gramming to as broad as plausible. It is aimed both at those who work with software developers and those who aspire to become developers themselves.</p>
+    to teach the common foundations of version control to as broad as plausible. It is aimed both at those who work with software developers and those who aspire to become developers themselves.</p>
   <p>Version Control is about the management of multiple versions of a
     project. To manage a version, each change [addition, edition, or removal] to the files in a
     project must be tracked. Version Control records each change made to a file [or a group
@@ -42,44 +42,45 @@
     Mac users click the following for <a href="https://mac.github.com">macOS</a>,<br>
     as for linux users, Git with your package manager might be a piece of cake for you.
     For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
-    The installation proceess very simple in all the operating systems. you may also want visit <a href="http://git-scm.com">git for all platforms</a>
+    The installation process very simple in all the operating systems. you may also want visit <a href="http://git-scm.com">git for all platforms</a>
     .
     We will
     cover installation in linux which similar to macOS, as for windows users, you will download the binary from the link above.</p>
-  <p> for linux users [<em>Debian-based destros</em>] type:</p>
+  <p> for linux users [<em>Debian-based destros</em>] type: <code>sudo apt-get install git</code></p> <br>
   <img src="images/gibunt.png" alt="linux installation image">
   <p>
     as for macOS users proceed by:
+    <code>brew install git</code><br>
   </p><img src="images/macinst.png" alt="macOS installation image">
 
   <p>After the installation we'll create a github account. click here to create a free <a href="https://github.com">github</a> account,
     then we will configure our account we've just created to used across all local repositories.</p>
 
-  <div class="container">
-    git config --global user.name [user-name] <br>
-    git config --global user.email [user-email] <br>
-    git config --global color.ui auto [optional]
-  </div>
+
+  <code>git config --global user.name</code> [user-name] <br>
+  <code>git config --global user.email</code> [user-email] <br>
+  <code>git config --global color.ui auto</code> [optional]
+
 
   <p>From a command prompt <em>[terminal or CMD ],</em> change directories to
-    your desktop , development folder or an existing project that you want to put under version control.
+    your desktop: <code>cd Desktop</code> , development folder or an existing project that you want to put under version control.
     Then we proceed from there by typing the following command:</p>
 
   <h6>Don't miss the following article on <a href="command.html">command line</a> </h6>
-  <div class="container">
-
-    mkdir git_docs <br>
-    cd git_docs<br>
-    touch README.md<br>
-    nano README.md<br>
-    git init<br>
-    git add .<br>
-    git commit –m "The first commit"
 
 
-  </div>
-  <p>The first command in the sequence, mkdir, creates a new folder where we will store all our project files. You may want to proceed with your existing project, or create a folder with the different name as well.</p>
-  <p>Next, cd [<em>change directory</em>] gets us into the new folder we've just created.</p>
+  <code>mkdir git_docs</code> <br>
+  <code>cd git_docs</code> <br>
+  <code>touch README.md</code> <br>
+  <code>nano README.md</code> <br>
+  <code>git init</code> <br>
+  <code>git add .</code> <br>
+  <code>git commit –m "The first commit"</code>
+
+
+
+  <p>The first command in the sequence, <code>mkdir</code>, creates a new folder where we will store all our project files. You may want to proceed with your existing project, or create a folder with the different name as well.</p>
+  <p>Next, <code>cd</code> [<em>change directory</em>] gets us into the new folder we've just created.</p>
   <p>The next command creates an empty file in the directory named README.md.
     You can skip
     this part if you decided to proceed with a repository from a directory with files in it.
@@ -88,9 +89,9 @@
   <p>The next command opens a test editor with a file name created previously, you may use any of your choice eg. <em>Vi, Vim, Pico</em> or even the most basic but out of the CLI [<em>Command Line Interface</em>] called notepad.
     Inside the file, you may write a short story of your life or most interesting code you've ever write in your life without bugs. However,
     you may prefer to keep it simple and write all the new
-    commands you've learnt so far with their meaning the way you've understood them.</p>
+    commands you've learnt so far about git with their meaning the way you've understood them.</p>
 
-  <p>Git init, builds a .git directory that
+  <p>The <code>git init</code> command, builds a .git directory that
     contains all the metadata and repository history. Unlike
     many other version control systems, Git uniquely stores everything in just
     a single directory at the top of the project.</p>
@@ -113,39 +114,40 @@
     An equally common use case for Git is starting from someone else’s
     repository history.<br>
     The syntax to pull down a local copy of an existing repo is: </p>
-  <div class="container">
-    <em> git clone https://github.com/kisumu-poly-tech-hub/collaboration-tools.git <br>
-      git clone git@github.com:kisumu-poly-tech-hub/collaboration-tools.git <br>
-      git clone git://github.com/kisumu-poly-tech-hub/collaboration-tools.git</em>
-  </div>
+
+  <code>git clone</code> https://github.com/kisumu-poly-tech-hub/collaboration-tools.git <br>
+  <code>git clone</code> git@github.com:kisumu-poly-tech-hub/collaboration-tools.git <br>
+  <code>git clone</code> git://github.com/kisumu-poly-tech-hub/collaboration-tools.git
+
   <p>The clone command performs several subtasks under the hood. It sets up a remote (a Git repository address bookmark) named origin
     that points to the location <strong>https://github.com/kisumu-poly-tech-hub/collaboration-tools.git</strong>. Next, clone asks this location for the contents of its entire repository. Git copies those objects in a zlib-compressed
     manner over the network to the requestor’s local disk. Lastly, lone switches to a branch named master,
     as the current working copy.</p>
 
-  <p>we'll continue with the rest of the commads and many other more in details.</p>
-  <ol>
-    <li>git clone</li>
-    <li>git init</li>
-    <li>git add</li>
-    <li>git mv</li>
-    <li>git reset</li>
-    <li>git rm</li>
-    <li>git bisect</li>
-    <li>git grep</li>
-    <li>git log</li>
-    <li>git show</li>
-    <li>git status</li>
-    <li>git branch</li>
-    <li>git checkout</li>
-    <li>git commit</li>
-    <li>git diff</li>
-    <li>git merge</li>
-    <li>git rebase</li>
-    <li>git tag</li>
-    <li>git fetch</li>
-    <li>git pull</li>
-    <li>git push</li>
+  <p>We'll continue with the rest of the commads and many other more in details.</p>
+  <ol><code>
+      <li>git clone</li>
+      <li>git init</li>
+      <li>git add</li>
+      <li>git mv</li>
+      <li>git reset</li>
+      <li>git rm</li>
+      <li>git bisect</li>
+      <li>git grep</li>
+      <li>git log</li>
+      <li>git show</li>
+      <li>git status</li>
+      <li>git branch</li>
+      <li>git checkout</li>
+      <li>git commit</li>
+      <li>git diff</li>
+      <li>git merge</li>
+      <li>git rebase</li>
+      <li>git tag</li>
+      <li>git fetch</li>
+      <li>git pull</li>
+      <li>git push</li>
+    </code>
   </ol>
 
 
@@ -153,57 +155,64 @@
   <h2>These are common Git commands used in various situations:</h2>
   <ul>
     <h3>Start a working area</h3>
-    <li>clone - Retrieve an entire repository from a hosted location via URL</li>
-    <li>init - Initialize an existing directory as a Git repository</li>
+    <li> <code>clone</code> - Retrieve an entire repository from a hosted location via URL</li>
+    <li><code>init</code> - Initialize an existing directory as a Git repository</li>
   </ul>
   <ul>
     <h3>Work on the current change</h3>
-    <li>add - Add a file as it looks now to your next commit (stage)</li>
-    <li>mv - Change an existing file path and stage the move</li>
-    <li>reset - Unstage a file while retaining the changes in working directory</li>
+    <li><code>add</code> - Add a file as it looks now to your next commit (stage)</li>
+    <li><code>mv</code> - Change an existing file path and stage the move</li>
+    <li><code>reset</code> - Unstage a file while retaining the changes in working directory</li>
   </ul>
   <ul>
     <h3>Examine the history and state </h3>
-    <li>bisect - Use binary search to find the commit that introduced a bug</li>
-    <li>grep - Print lines matching a pattern</li>
-    <li>log - Show the commit history for the currently active branch</li>
-    <li>show - Show any object in Git in human-readable format</li>
-    <li>status - Show modified files in working directory, staged for your next commit</li>
+    <li><code>bisect</code> - Use binary search to find the commit that introduced a bug</li>
+    <li><code>grep</code> - Print lines matching a pattern</li>
+    <li><code>log</code> - Show the commit history for the currently active branch</li>
+    <li><code>show</code> - Show any object in Git in human-readable format</li>
+    <li><code>status</code> - Show modified files in working directory, staged for your next commit</li>
   </ul>
 
 
   <ul>
     <h3>Grow, mark and tweak your common history</h3>
-    <li>branch - List your branches. a * will appear next to the currently active branch</li>
-    <li>checkout - Switch to another branch and check it out into your working directory</li>
-    <li>commit - Record your staged content as a new commit snapshot</li>
-    <li>diff - Show what is changed but not staged, etc</li>
-    <li>merge - Join the specified branch’s history into the current one</li>
-    <li>tag - Create, list, delete or verify a tag object signed with GPG</li>
+    <li><code>branch</code> - List your branches. a * will appear next to the currently active branch</li>
+    <li><code>checkout</code> - Switch to another branch and check it out into your working directory</li>
+    <li><code>commit</code> - Record your staged content as a new commit snapshot</li>
+    <li><code>diff</code> - Show what is changed but not staged, etc</li>
+    <li><code>merge</code> - Join the specified branch’s history into the current one</li>
+    <li><code>tag</code> - Create, list, delete or verify a tag object signed with GPG</li>
   </ul>
   <ul>
     <h3>Collaborate</h3>
-    <li>fetch - Download all the branches from that Git remote</li>
-    <li>pull - Fetch and merge any commits from the tracking remote branch</li>
-    <li>push - Update local branch commits to the remote repository branch</li>
+    <li><code>fetch</code> - Download all the branches from that Git remote.</li>
+    <li><code>pull</code> - Fetch and merge any commits from the tracking remote branch.</li>
+    <li><code>push</code> - Update local branch commits to the remote repository branch.</li>
   </ul>
+
+  <p><strong>How </strong> - We downloaded git from the internet onto our computer
+    and went through <br> the installation process then proceeded with the example below showing how to get <br> started with git and github.</p>
 
   <div class="bounce">
-    <h2>Keep Calm And <strong> <em>git push</em> </strong> </h2>
+    <h2>Keep Calm And <strong> <em>git push </em> </strong> </h2>
   </div>
 
-  <ul>
-    <h3>Recap:</h3>
-    <li>we launched terminal</li>
-    <li>we moved to the desktop - cd Desktop [working-area]</li>
-    <li>we created a folder - mkdir [new-folder] </li>
-    <li>we initialised our folder - git init</li>
-    <li>we created a file - pico [file-name]</li>
-    <li>we added a file to the working tree. - git add .</li>
-    <li>we committed a change to our repository. - git commit -m [commit-message]
+  <h3>The steps we took:</h3>
+  <ol>
+    <li> Launched terminal <code>Ctrl Alt T </code> .</li>
+    <li> Moved to the desktop - <code>cd</code> Desktop [working-area].</li>
+    <li> Created a folder - <code>mkdir</code> [new-folder] .</li>
+    <li> Initialised our folder - <code> git init</code> </li>
+    <li> Created a file - <code>pico</code> [file-name].</li>
+    <li> Added a file to the working tree. -<code>git add .</code> </li>
+    <li> Committed a change to our repository. - <code> git commit -m</code> [commit-message].
     </li>
-  </ul>
-
+  </ol>
+  <hr>
+  <footer class="footer"><strong>Kherld Hussein</strong> <br>
+    <strong>Jimmy Tron</strong>
+    <p class="tech">Copyright © 2020 tech-hub.io </p>
+  </footer>
   <!-- script sheet -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

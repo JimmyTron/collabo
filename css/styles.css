@@ -1,16 +1,20 @@
 body {
-  background-color: #653AB5;
+  background-color: #fff;
   padding: 1rem;
   flex-direction: column;
   overflow-x: hidden;
   /* height: 100vh; */
-  margin: 3rem;
+  margin: 1rem 8rem;
+}
+
+code {
+  background-color: #E5EFF5;
 }
 
 h1 {
   letter-spacing: .8rem;
   text-align: center;
-  line-height: 1.5;
+  line-height: 2;
   color: #11192b;
 }
 
@@ -18,10 +22,7 @@ h2 {
   color: #11192b;
 }
 
-h3 {
-  color: #fff;
-}
-h4{
+h4 {
   color: #532E96;
 }
 
@@ -47,7 +48,7 @@ h4{
 }
 
 p {
-  line-height: 1.5;
+  line-height: 2;
   text-align: left;
 }
 
@@ -64,7 +65,7 @@ a:hover {
 .bounce {
   width: 10px;
   padding: 20px;
-  background: #653AB5;
+  background: #fff;
   color: #653AB5;
   position: relative;
   animation: bounce 1s ease-in 2s 6 alternate none;
@@ -81,6 +82,15 @@ a:hover {
   margin-bottom: .5625rem;
 }
 
+li {
+  line-height: 2;
+}
+
+.tech {
+  text-align: center;
+  color: #E3eFf5;
+}
+
 @keyframes bounce {
   from {
     top: 0;
@@ -91,4 +101,9 @@ a:hover {
     top: 15px;
     left: 20px;
   }
+}
+
+.footer {
+  color: #000111;
+
 }
