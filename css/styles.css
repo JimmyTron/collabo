@@ -103,6 +103,13 @@ li {
   }
 }
 
+.glow-anime{
+  font-size: 2rem;
+  color: #ED3F2123;
+  font-weight: bold;
+  font-family: fantasy;
+}
+
 .footer {
   color: #000111;
 
