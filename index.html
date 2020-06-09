@@ -29,18 +29,22 @@
     project must be tracked. Version Control records each change made to a file [or a group
     of files] and offers a way to undo or roll back each change.</p>
 
-  <p class="lead">Git is the free and <em>open source</em> distributed version control system
+  <p class="lead">Git is the free and <em title="">open source</em> distributed version control system
     that's responsible for everything GitHub
     related that happens locally on your computer.
     Git stretches the very notion of
     version control systems [VCS] by its ability to offer almost all of
     its features for use offline and without a central server.</p>
-  <img src="images/OPNsos.png" alt="">
+  <img src="images/OPNsos.png" alt="open source image">
+
+  <blockquote cite="http://">
+    LET'S GET STARTED
+  </blockquote>
 
   <p class="lead">We will start looking at the basic git commands to help us get started. This will start
     by installing git onto our system,<br>
-    for windows users you may proceed to <a href="https://windows.github.com" alt="git for windows">git for windows</a>,<br>
-    macOS users click the following link for <a href="https://mac.github.com">macOS</a>,<br>
+    for windows users you may proceed to <a href="https://windows.github.com" title="download for windows" >git for windows</a>,<br>
+    macOS users click the following link for <a href="https://mac.github.com"title="git for macOS" >macOS</a>,<br>
     as for linux users, Git with your package manager might be a piece of cake for you.
     For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
     The installation process very simple in all the operating systems. You may also want visit <a href="http://git-scm.com">git for all platforms</a>
@@ -57,20 +61,31 @@
   <p class="lead">After the installation we'll create a github account. click here to create a free <a href="https://github.com">github</a> account,
     then we will configure our account we've just created to used across all local repositories.</p>
 
+
+
+  <div class="col col-12 sm-col-6 p2"><pre class="terminal h6 md-h5"
+
+  </pre>
   <div class="jumbotron jumbotron-fluid">
 
     <code>git config --global user.name</code> "user-name" <br>
     <code>git config --global user.email</code> "user-email" <br>
     <code>git config --global color.ui auto</code> [optional]
   </div>
+</div>
+
 
   <p class="lead">From a command prompt <em>[terminal or CMD ],</em> change directories to
     your desktop: <code>cd Desktop</code> , development folder or an existing project that you want to put under version control.
     Then we proceed from there by typing the following command:</p>
 
-  <h6>Don't miss the following article on <a href="command.html">command line</a> </h6>
 
 
+
+
+  <div class="col col-12 sm-col-6 p2"><pre class="js-cli--demo terminal h6 md-h5"
+
+  </pre>
   <code>mkdir git_docs</code> <br>
   <code>cd git_docs</code> <br>
   <code>touch README.md</code> <br>
@@ -78,6 +93,7 @@
   <code>git init</code> <br>
   <code>git add .</code> <br>
   <code>git commit –m "The first commit"</code>
+</div>
 
 
 
@@ -88,7 +104,8 @@
     this part if you decided to proceed with a repository from a directory with files in it.
   </p>
 
-  <p class="lead">The next command opens a text editor with a file name created previously, you may use any text editor of your choice eg. <em>Vi, Vim, Pico</em> or even the most basic but out of the CLI [<em>Command Line Interface</em>] called
+  <p class="lead">The next command opens a text editor with a file name created previously, you may use any text editor of your choice eg. <em><code>Vi, Vim, Pico</code> </em>
+    or even the most basic but out of the <abbr class="caps"title="Command Line Interface">CLI</abbr> called
     notepad++.
     Inside the file, you may write a short story of your life or most interesting code you've ever write in your life without bugs. However,
     you may prefer to keep it simple and write all the new
@@ -108,7 +125,7 @@
   <p class="lead">Lastly, the <code>commit</code> function takes all previous additions and makes
     them permanent in the repository’s history in a transactional action.
     Rather than letting Git prompt the user via the default text editor,
-    the -m option preemptively supplies the commit message to be
+    the <code>-m</code> option preemptively supplies the commit message to be
     saved alongside the committed files.</p>
 
   <img src="images/gitdocs.png" alt="git_docs image showing all the steps covered">
@@ -130,6 +147,8 @@
     that points to the location <strong>https://github.com/kisumu-poly-tech-hub/collaboration-tools.git</strong>. Next, clone asks this location for the contents of its entire repository. Git copies those objects in a zlib-compressed
     manner over the network to the requestor’s local disk. Lastly, clone switches to a branch named master,
     as the current working copy.</p>
+
+<hr class="hr">
 
   <p class="lead">We'll continue with the rest of the commads and many other more in details.</p>
   <ol><code>
@@ -159,7 +178,7 @@
 
 
 
-  <h2 class="display-4">These are common Git commands used in various situations:</h2>
+  <h2 class="display-4">Common Git commands used in various situations</h2>
   <ul>
     <h3>Start a working area</h3>
     <li> <code>clone</code> - Retrieve an entire repository from a hosted location via URL.</li>
@@ -197,6 +216,21 @@
     <li><code>push</code> - Update local branch commits to the remote repository branch.</li>
   </ul>
 
+<hr class="hr">
+
+  <div class="container md-px4 ">
+  <div class="col col-12 sm-col-6 p2">
+    <h2>Invite your team</h2>
+  <p>Add collaborators, right through the <abbr class="caps">CLI</abbr>. Deployment is simple for new team members,
+    whether you’re part of an open source project or a large organization.</p>
+  </div>
+<div class="col col-12 sm-col-6 p2"><pre class="js-cli--demo terminal h6 md-h5"
+
+</pre><h6>Don't miss the following article on <a href="command.html" title="The Command Line Interface">command line</a> </h6></div>
+</div>
+
+
+
   <p class="lead"><strong>Recap :</strong> We downloaded git from the internet onto our computer
     , went through <br> the installation process then proceeded with the example below showing how to get <br> started with git and github.</p>
 
@@ -206,24 +240,41 @@
 
   <h3>The steps we took:</h3>
   <ol>
-    <li> Launched terminal - <code>Ctrl Alt T </code> .</li>
-    <li> Moved to the desktop - <code>cd</code> Desktop [working-area].</li>
-    <li> Created a folder - <code>mkdir</code> [new-folder] .</li>
-    <li> Initialised our folder - <code> git init</code> </li>
-    <li> Created a file - <code>pico</code> [file-name].</li>
-    <li> Added a file to the working tree. - <code> git add .</code> </li>
-    <li> Committed a change to our repository. - <code> git commit -m</code> [commit-message].
+    <li> Launched terminal — <code>Ctrl Alt T </code> .</li>
+    <li> Moved to the desktop — <code>cd</code> Desktop [working-area].</li>
+    <li> Created a folder — <code>mkdir</code> [new-folder] .</li>
+    <li> Initialised our folder — <code> git init</code> </li>
+    <li> Created a file — <code>pico</code> [file-name].</li>
+    <li> Added a file to the working tree. — <code> git add .</code> </li>
+    <li> Committed a change to our repository. — <code> git commit -m</code> [commit-message].
     </li>
   </ol>
+
+
   <hr class="my-4">
+
+<section id="footer">
+
   <footer class="footer mt-auto py-3"><strong>Kherld Hussein</strong> <br>
     <strong>Jimmy Tron</strong>
     <p class="tech lead">Copyright © 2020 tech-hub.io </p>
   </footer>
+  </section>
+
   <!-- script sheet -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous">
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+   crossorigin="anonymous">
+ </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous">
+</script>
 
 </body>
 
