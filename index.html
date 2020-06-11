@@ -18,148 +18,176 @@
 
 <body>
 
+  <section id="header" class="sm-col-12">
 
-<section id="header" class="sm-col-12">
 
+    <h1>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
+    <!-- <h4> <em>A tutorial introduction to git. </em> </h4> -->
+    <p class="lead"> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an
+      introduction to <strong>git</strong> for absolute beginners,this tutorial is designed
+      to teach the common foundations of version control to as broad as plausible. It is aimed both at those who work
+      with software developers and those who aspire to become developers themselves.</p>
+    <p class="lead">Version Control is about the management of multiple versions of a
+      project. To manage a version, each change [<code>addition, edition, or removal</code>] to the files in a
+      project must be tracked. Version Control records each change made to a file [or a group
+      of files] and offers a way to undo or roll back each change.</p>
 
-  <h1>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
-  <!-- <h4> <em>A tutorial introduction to git. </em> </h4> -->
-  <p class="lead"> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an introduction to <strong>git</strong> for absolute beginners,this tutorial is designed
-    to teach the common foundations of version control to as broad as plausible. It is aimed both at those who work with software developers and those who aspire to become developers themselves.</p>
-  <p class="lead">Version Control is about the management of multiple versions of a
-    project. To manage a version, each change [<code>addition, edition, or removal</code>] to the files in a
-    project must be tracked. Version Control records each change made to a file [or a group
-    of files] and offers a way to undo or roll back each change.</p>
-
-  <p  class="lead md-col-4 mx-auto left-align "><img class="media-image rounded"
-     asnyc="asnyc" src="images/gitlog.png"
-     alt="Git image"> Git is the free and <em title="Everyone is privy to the source code">open source</em> distributed version control system
-    that's responsible for everything GitHub
-    related that happens locally on your computer.
-    Git stretches the very notion of
-    version control systems [VCS] by its ability to offer almost all of
-    its features for use offline and without a central server.</p>
-  <img class="media-image"src="images/OPNsos.png" alt="open source image">
+    <p class="lead md-col-4 mx-auto left-align "><img class="media-image rounded" asnyc="asnyc" src="images/gitlog.png"
+        alt="Git image"> Git is the free and <em title="Everyone is privy to the source code">open source</em>
+      distributed version control
+      system
+      that's responsible for everything GitHub
+      related that happens locally on your computer.
+      Git stretches the very notion of
+      version control systems [VCS] by its ability to offer almost all of
+      its features for use offline and without a central server.</p>
+    <img class="media-image" src="images/OPNsos.png" alt="open source image">
   </section>
 
-<section id="installation">
-  <blockquote cite="http://">
-    LET'S GET STARTED
-  </blockquote>
+  <section id="installation">
+    <blockquote cite="http://" class="mb-0">
+      LET'S GET STARTED
+    </blockquote>
 
-  <p class="lead">We will start looking at the basic git commands to help us get started. This will start
-    by installing git onto our system,<br>
-    for windows users you may proceed to <a href="https://windows.github.com" title="Download for windows" >git for windows</a>,<br>
-    macOS users click the following link for <a href="https://mac.github.com"title="Git for macOS" >macOS</a>,<br>
-    as for linux users, Git with your package manager might be a piece of cake for you.
-    For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
-    The installation process very simple in all the operating systems. You may also want visit <a href="http://git-scm.com" title="Download Git for any operating system">git for all platforms</a>
-    in case you are using operating system not mentioned above.
-    We will
-    cover installation of git in linux and macOS, as for windows users, you will download the binary from the link above.</p>
-  <p class="lead"> For linux users [<em>Debian-based destros</em>] type: <code>sudo apt install git</code></p> <br>
-  <img src="images/gibunt.png" alt="linux installation image">
-  <p class="lead">
-    For macOS users proceed by:
-    <code>brew install git</code><br>
-  </p><img src="images/macinst.png" alt="macOS installation image">
-</section>
+    <p class="lead">Since we've known theoriticaly what git is, let's dig and find out what's under the hood. This will start
+      by installing git onto our system.<br>
+      For windows users you may proceed to <a href="https://windows.github.com" title="Download for windows">git for
+        windows</a>, head over to downloads the choose the latest version or any that you need. After the download go through
+        the installation wizard, make sure <strong>Git Bash</strong> is checked and the rest you may keep as default.
+        <img src="images/gitwinbash.png" alt="checked Git Bash"> <br>
+      <!-- macOS users click the following link for <a href="https://mac.github.com" title="Git for macOS">macOS</a>, -->
+      <br>
+      As for linux users, Git with your package manager might be a piece of cake for you.
+      For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
+      All the installation processes are very simple in all  operating systems. You may also want visit <a
+        href="http://git-scm.com" title="Download Git for any operating system">git for all platforms</a>
+      in case you are using operating system not mentioned above.</p>
+    <p class="lead"> For linux users [<em>Debian-based destros</em>] type: <code>sudo apt install git</code></p> <br>
+    <img src="images/gibunt.png" alt="linux installation image">
+    <p class="lead">
+      For macOS users proceed by:
+      <code>brew install git</code><br>
+    </p><img src="images/macinst.png" alt="macOS installation image">
+  </section>
 
-<section id="body">
-
-
-  <p class="lead">After the installation we'll create a github account. click here to create a free <a href="https://github.com">github</a> account,
-    then we will configure our account we've just created to used across all local repositories.</p>
-
+  <section id="body">
 
 
-  <div class="col col-12 sm-col-6 p2"><pre class="terminal h6 md-h5"
+    <p class="lead">After the installation we'll create and setup our github account. click here to create a free <a
+        href="https://github.com">github</a> account,
+      then we will configure our account we've just created to used across all local repositories.</p>
 
-  </pre>
-  <div class="jumbotron jumbotron-fluid">
+
+
+
+    <div class="col col-12 sm-col-6 p2
+       terminal h6 md-h5  jumbotron jumbotron-fluid"> 
+
+       <div class="bd-clipboard">
+         <button type="button" 
+        class="btn-clipboard" title="Copy to clipboard"
+         data-original-title="Copy to clipboard">Copy</button></div>
 
     <code>git config --global user.name</code> "user-name" <br>
     <code>git config --global user.email</code> "user-email" <br>
     <code>git config --global color.ui auto</code> [optional]
-  </div>
+  
 </div>
 
 
-  <p class="lead">From a command prompt <em>[terminal or CMD ],</em> change directories to
+  <p class="lead">From the command prompt <em>[terminal or CMD ],</em> change directories to
     your desktop: <code>cd Desktop</code> , development folder or an existing project that you want to put under version control.
     Then we proceed from there by typing the following command:</p>
 
 
 
 
+  <div class="col col-12 sm-col-6 p2 js-cli--demo terminal h6 md-h5   ">
 
-  <div class="col col-12 sm-col-6 p2"><pre class="js-cli--demo terminal h6 md-h5"
+    <button type="button" 
+    class="btn-clipboard" title="Copy to clipboard" 
+    data-original-title="Copy to clipboard">Copy</button>
+    
+      <code>mkdir git_docs</code> <br>
+      <code>cd git_docs</code> <br>
+      <code>touch README.md</code> <br>
+      <code>nano README.md</code> <br>
+      <code>git init</code> <br>
+      <code>git add .</code> <br>
+      <code>git commit –m "The first commit"</code>
+    </div>
 
-  </pre>
-  <code>mkdir git_docs</code> <br>
-  <code>cd git_docs</code> <br>
-  <code>touch README.md</code> <br>
-  <code>nano README.md</code> <br>
-  <code>git init</code> <br>
-  <code>git add .</code> <br>
-  <code>git commit –m "The first commit"</code>
-</div>
 
 
+    <p class="lead">The first command in the sequence, <code>mkdir</code>, creates a new folder where we will store all
+      our project files. You may want to proceed with your existing project, or create a folder with the different name
+      as well.</p>
+    <p class="lead">Next, <code>cd</code> [<em>change directory</em>] gets us into the new folder we've just created.
+    </p>
+    <p class="lead">The next command, <code>touch</code> creates an empty file in the directory named README.md,
+      you can skip
+      this part if you decided to proceed with a repository from a directory with files in it.
+    </p>
 
-  <p class="lead">The first command in the sequence, <code>mkdir</code>, creates a new folder where we will store all our project files. You may want to proceed with your existing project, or create a folder with the different name as well.</p>
-  <p class="lead">Next, <code>cd</code> [<em>change directory</em>] gets us into the new folder we've just created.</p>
-  <p class="lead">The next command, <code>touch</code> creates an empty file in the directory named README.md,
-    you can skip
-    this part if you decided to proceed with a repository from a directory with files in it.
-  </p>
+    <p class="lead">The next command opens a text editor with a file name created previously, you may use any text
+      editor of your choice eg. <em><code>Nano, Vim, Pico</code>, </em>
+      or even the most basic but out of the <abbr class="caps" title="Command Line Interface">CLI</abbr> called
+      notepad<code>++</code>.
+      Inside the file, you may write a short story of your life or most interesting code you've ever write in your life
+      without bugs. However,
+      you may prefer to keep it simple and write all the new
+      commands you've learnt so far about git with their meaning the way you've understood them.<br>
+      If you used <code>nano</code> or <code>pico</code> to edit your file, press <code>Ctrl O </code>to save your
+      changes, press <code>Enter</code> to accept
+      the changes finally press <code>Ctrl X</code> to exit. 
+     And for <em  role="button" title="google-oriented programmers">nerds</em> who used <code>vim</code> press <code>Ctrl i</code> to edit your file, <code>:wq!</code> to exit, and then <code>Enter</code>
+     to save the document.</p>
 
-  <p class="lead">The next command opens a text editor with a file name created previously, you may use any text editor of your choice eg. <em><code>Nano, Vim, Pico</code>, </em>
-    or even the most basic but out of the <abbr class="caps"title="Command Line Interface">CLI</abbr> called
-    notepad<code>++</code>.
-    Inside the file, you may write a short story of your life or most interesting code you've ever write in your life without bugs. However,
-    you may prefer to keep it simple and write all the new
-    commands you've learnt so far about git with their meaning the way you've understood them.<br>
-    If you used <code>nano</code> or <code>pico</code> to edit your file, press <code>Ctrl O </code>to save your changes then <code>Enter</code> to accept
-    the changes finally press <code>Ctrl X</code> to exit.</p>
+    <p class="lead">The <code>git init</code> command, builds a .git directory that
+      contains all the metadata and repository history. Unlike
+      many other version control systems, Git uniquely stores everything in just
+      a single directory at the top of the project.</p>
 
-  <p class="lead">The <code>git init</code> command, builds a .git directory that
-    contains all the metadata and repository history. Unlike
-    many other version control systems, Git uniquely stores everything in just
-    a single directory at the top of the project.</p>
+    <p class="lead">Following the directory initialization, the <code>add</code> command with the dot wildcard tells Git
+      to start
+      tracking changes for the current directory, its files, and for all folders
+      beneath, if any exist. </p>
 
-  <p class="lead">Following the directory initialization, the <code>add</code> command with the dot wildcard tells Git to start
-    tracking changes for the current directory, its files, and for all folders
-    beneath, if any exist. </p>
+    <p class="lead">Lastly, the <code>commit</code> function takes all previous additions and makes
+      them permanent in the repository’s history in a transactional action.
+      Rather than letting Git prompt the user via the default text editor,
+      the <code>-m</code> option preemptively supplies the commit message to be
+      saved alongside the committed files.</p>
 
-  <p class="lead">Lastly, the <code>commit</code> function takes all previous additions and makes
-    them permanent in the repository’s history in a transactional action.
-    Rather than letting Git prompt the user via the default text editor,
-    the <code>-m</code> option preemptively supplies the commit message to be
-    saved alongside the committed files.</p>
+    <img src="images/gitdocs.png" alt="git_docs image showing all the steps covered">
 
-  <img src="images/gitdocs.png" alt="git_docs image showing all the steps covered">
+    
 
-  <p class="lead">It is amazing and exciting ☺ to be able to truthfully say that I can use
-    the basics of Git for locally versioning of files with just these commands.<br>
-    What if we want to <strong>clone</strong> a remote repository, or <strong>contribute</strong> and <strong>collaborate</strong> with other developers on the same project ...?
-    An equally common use case for Git is starting from someone else’s
-    repository history on github.<br>
-    The syntax to pull down a local copy of an existing remote repo is: </p>
+    <p class="lead">It is amazing and exciting ☺ to be able to truthfully say that I can use
+      the basics of Git for locally versioning of files with just these commands.<br>
+      What if we want to <strong>clone</strong> a remote repository, or <strong>contribute</strong> and
+      <strong>collaborate</strong> with other developers on the same project ...?
+      An equally common use case for Git is starting from someone else’s
+      repository history on github.<br>
+      The syntax to pull down a local copy of an existing remote repo is: </p>
 
-  <div class="jumbotron jumbotron-fluid">
-    <code>git clone</code> https://github.com/kisumu-poly-tech-hub/collaboration-tools.git <br>
-    <code>git clone</code> git@github.com:kisumu-poly-tech-hub/collaboration-tools.git <br>
-    <code>git clone</code> git://github.com/kisumu-poly-tech-hub/collaboration-tools.git
-  </div>
+    <div class="jumbotron jumbotron-fluid">
+      <code>git clone</code> https://github.com/kisumu-poly-tech-hub/collaboration-tools.git <br>
+      <code>git clone</code> git@github.com:kisumu-poly-tech-hub/collaboration-tools.git <br>
+      <code>git clone</code> git://github.com/kisumu-poly-tech-hub/collaboration-tools.git
+    </div>
 
-  <p class="lead">The <code>clone</code> command performs several subtasks under the hood. It sets up a remote (a Git repository address bookmark) named origin
-    that points to the location <strong>https://github.com/kisumu-poly-tech-hub/collaboration-tools.git</strong>. Next, <code>clone</code> asks this location for the contents of its entire repository. Git copies those objects in a zlib-compressed
-    manner over the network to the requestor’s local disk. Lastly, <code>clone</code> switches to a branch named master,
-    as the current working copy.</p>
-</section>
-<hr class="hr">
-<h2 class="display-4 gitcommand">Common Git commands used in various situations</h2>
+    <p class="lead">The <code>clone</code> command performs several subtasks under the hood. It sets up a remote (a Git
+      repository address bookmark) named origin
+      that points to the location <strong>https://github.com/kisumu-poly-tech-hub/collaboration-tools.git</strong>.
+      Next, <code>clone</code> asks this location for the contents of its entire repository. Git copies those objects in
+      a zlib-compressed
+      manner over the network to the requestor’s local disk. Lastly, <code>clone</code> switches to a branch named
+      master,
+      as the current working copy.</p>
+  </section>
+  <hr class="hr">
+  <h2 class="display-4 gitcommand">Common Git commands used in various situations</h2>
   <p class="lead">We'll continue with the rest of the commads and many other more in details.</p>
   <ol><code>
       <li>git clone</li>
@@ -189,18 +217,19 @@
 
 
 
-  <ul>
+  <ul class="list-unstyled">
     <h3>Start a working area</h3>
     <li> <code>clone</code> - Retrieve an entire repository from a hosted location via URL.</li>
     <li><code>init</code> - Initialize an existing directory as a Git repository.</li>
   </ul>
-  <ul>
+  <ul class="list-unstyled">
     <h3>Work on the current change</h3>
     <li><code>add</code> - Add a file as it looks now to your next commit (stage).</li>
     <li><code>mv</code> - Change an existing file path and stage the move.</li>
     <li><code>reset</code> - Unstage a file while retaining the changes in working directory.</li>
   </ul>
-  <ul>
+
+  <ul class="list-unstyled">
     <h3>Examine the history and state </h3>
     <li><code>bisect</code> - Use binary search to find the commit that introduced a bug.</li>
     <li><code>grep</code> - Print lines matching a pattern.</li>
@@ -210,7 +239,7 @@
   </ul>
 
 
-  <ul>
+  <ul class="list-unstyled">
     <h3>Grow, mark and tweak your common history</h3>
     <li><code>branch</code> - List your branches. a * will appear next to the currently active branch.</li>
     <li><code>checkout</code> - Switch to another branch and check it out into your working directory.</li>
@@ -219,72 +248,108 @@
     <li><code>merge</code> - Join the specified branch’s history into the current one.</li>
     <li><code>tag</code> - Create, list, delete or verify a tag object signed with GPG.</li>
   </ul>
-  <ul>
+  <ul class="list-unstyled">
     <h3>Collaborate</h3>
     <li><code>fetch</code> - Download all the branches from that Git remote.</li>
     <li><code>pull</code> - Fetch and merge any commits from the tracking remote branch.</li>
     <li><code>push</code> - Update local branch commits to the remote repository branch.</li>
   </ul>
 
-<hr class="hr">
+  
+
+  <hr class="hr">
 
   <div class="container md-px4 ">
-  <div class="col col-12 sm-col-6 p2">
-    <h2>Get hands on mad</h2>
-  <p>Create the next awesome project, use <abbr class="caps" title="The Command Line Interface">
-    <strong>CLI</strong> </abbr>, be the next <span class="pro">Pro</span>grammer,
-    whether you’re part of an open source project or a large organization.</p>
-  </div>
 
-  <div class="bounce">
-    <h2>Keep Calm And <strong> <em>git push </em> </strong> </h2>
-  </div>
+    <div class="col col-12 sm-col-6 p2">
 
-<div class="col col-12 sm-col-6 p2"><pre class="js-cli--demo terminal h6 md-h5"
+      <h2>Get hands on mad</h2>
 
-</pre><h6>Don't miss the following article on <a href="command.html" title="The Command Line Interface">command line</a> </h6></div>
+      <p class="lead">Create the next awesome project, use <abbr class="initialism" title="The Command Line Interface">
+          <strong>CLI</strong> </abbr>, be the next <span class="pro">Pro</span>grammer,
+        whether you’re part of an open source project or a large organization.</p>
+
+    </div>
+
+    <div class="bounce">
+      <h2>Keep Calm And <strong> <em>git push </em> </strong> </h2>
+    </div>
+
+    <div class="col col-12 sm-col-6 p2 js-cli--demo terminal h6 md-h5">
+      <pre class=""
+       <h6>Don't miss the following article on <a href="command.html" title="The Command Line Interface">command line</a> </h6></div>
 </div>
 
 
   <p class="lead"><strong>Recap :</strong> We downloaded git from the internet onto our computer
     , went through <br> the installation process then proceeded with the example below showing how to get <br> started with git and github.</p>
 
+    
 
   <h3>The steps we took:</h3>
-  <ol>
-    <li> Launched terminal — <code>Ctrl Alt T </code> .</li>
-    <li> Moved to the desktop — <code>cd Desktop</code>  [working-area].</li>
-    <li> Created a folder — <code>mkdir</code> [folder-name] .</li>
-    <li> Initialised our folder — <code> git init</code> </li>
-    <li> Created a file — <code>vim</code> [file-name].</li>
-    <li> Added a file to the working tree. — <code> git add .</code> </li>
-    <li> Committed a change to our repository. — <code> git commit -m</code> [commit-message].
-    </li>
-  </ol>
+
+  <dl class="row">
+    <dt class="col-sm-3">Launched terminal</dt>
+    <dd class="col-sm-9"><code>Ctrl Alt T </code></dd>
+  
+    <dt class="col-sm-3">Moved to the desktop</dt>
+    <dd class="col-sm-9">
+      <p><code>cd Desktop</code></p>
+      <p>[working-area].</p>
+    </dd>
+  
+    <dt class="col-sm-3">Created a folder</dt>
+    <dd class="col-sm-9"><code>mkdir</code> [folder-name] .</dd>
+  
+    <dt class="col-sm-3 text-truncate">Initialised our folder</dt>
+    <dd class="col-sm-9"><code> git init</code></dd>
+  
+    <dt class="col-sm-3">Created a file</dt>
+    <dd class="col-sm-9"><code>vim</code> [file-name]. </dd>
+
+    <dt class="col-sm-3">Added a file to the working tree. </dt>
+    <dd class="col-sm-9"> <code> git add .</code></dd>
+
+    <dt class="col-sm-3">Committed a change to our repository.</dt>
+    <dd class="col-sm-9">
+      <p> <code> git commit -m</code></p>
+    <p>[commit-message].</p> </dd>
+  </dl>
 
 
+ 
   <hr class="my-4 hr">
 
 <section id="footer">
+ 
 
-  <footer class="footer mt-auto py-3"> <br>
+  <footer class="footer mt-auto py-3 blockquote-footer row"> <br>
 
-<div class=" col-12  rightter">
+<div class=" col-12  rightter col-sm-12">
   <img asnyc="asnyc" src="images/gitlog.png"
-   class="media-image rounded">
-   <p class="media-body h6 muted"><strong before="—"
-     class="block before-content">Jimmy Tron</strong>
-     <!-- <em>  developer &amp; IT techie</em> -->
+   class="media-image rounded rounded-circle">
+   <p class="media-body h6 black muted lead "><strong role="button"
+     class="block before-content" before="—">
+     
+     Jimmy Tron</strong>
+     
+     <small class="text-muted text-center">developer &amp; IT techie</small>
    </p>
 
 </div>
-
-<div class=" col-12  rightter">
+<!-- https://twitter.com/jimmytron_ke/header_photo -->
+<!-- https://twitter.com/KiokoCharley/status/1198166498851864578/photo/1 -->
+<!-- https://avatars3.githubusercontent.com/u/23496280?s=400&u=2811dfa0842b9c2e2206ebbbcb520a280d0c9f17&v=4 -->
+<div class=" col-12  rightter col-sm-12">
   <img asnyc="asnyc" src="images/gitlog.png"
-   class="media-image rounded">
-   <p class="media-body h6 muted"><strong before="—"
-     class="block before-content">Kherld Hussein</strong>
-     <!-- <em>developer &amp; adventure seeker</em> -->
+   class="media-image rounded rounded-circle">
+   <p class="media-body h6 muted lead"><strong  role="button" before="—"
+     class="block before-content">
+     Kherld Hussein</strong>
+    
+     <small class="text-muted text-center">developer &amp; adventure seeker</small>
+
+     
    </p>
 
 </div>
@@ -299,15 +364,15 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
   crossorigin="anonymous">
-</script>
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
    crossorigin="anonymous">
- </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
   crossorigin="anonymous">
-</script>
+  </script>
 
 </body>
 
