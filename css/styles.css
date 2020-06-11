@@ -244,6 +244,10 @@ block;
   border: 0;
   /* border-radius: 3px; */
 }
+.gitcommand{
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
 
 blockquote footer a .media-image, .blockquote footer a .media-image {
 	max-width: 4rem;
