@@ -55,7 +55,7 @@
         windows</a>, head over to downloads the choose the latest version or any that you need. After the download go through
         the installation wizard, make sure <strong>Git Bash</strong> is checked and the rest you may keep as default.
         <img src="images/gitwinbash.png" alt="checked Git Bash"> <br>
-      <!-- macOS users click the following link for <a href="https://mac.github.com" title="Git for macOS">macOS</a>, -->
+      <!-- "https://mac.github.com"  -->
       <br>
       As for linux users, Git with your package manager might be a piece of cake for you.
       For Ubuntu- and Debian-flavored distributions, you use APT to install Git.<br>
@@ -85,7 +85,7 @@
 
        <div class="bd-clipboard">
          <button type="button" 
-        class="btn-clipboard" title="Copy to clipboard"
+        class="btn-clipboard" title="Copy to clipboard" onclick="myFunction()"
          data-original-title="Copy to clipboard">Copy</button></div>
 
     <code>git config --global user.name</code> "user-name" <br>
@@ -100,12 +100,17 @@
     Then we proceed from there by typing the following command:</p>
 
 
+  <!-- The text field -->
+  <input type="text" value="Hello World" id="myInput">
+
+  <!-- The button used to copy the text -->
+  <button onclick="myFunction()">Copy text</button>
 
 
   <div class="col col-12 sm-col-6 p2 js-cli--demo terminal h6 md-h5   ">
 
     <button type="button" 
-    class="btn-clipboard" title="Copy to clipboard" 
+    class="btn-clipboard" title="Copy to clipboard" onclick="myFunction()"
     data-original-title="Copy to clipboard">Copy</button>
     
       <code>mkdir git_docs</code> <br>
@@ -316,7 +321,6 @@
     <p>[commit-message].</p> </dd>
   </dl>
 
-
  
   <hr class="my-4 hr">
 
@@ -326,7 +330,7 @@
   <footer class="footer mt-auto py-3 blockquote-footer row"> <br>
 
 <div class=" col-12  rightter col-sm-12">
-  <img asnyc="asnyc" src="https://twitter.com/jimmytron_ke/header_photo"
+  <img asnyc="asnyc" src="images/gitlog.png"
    class="media-image rounded rounded-circle">
    <p class="media-body h6 black muted lead "><strong role="button"
      class="block before-content" before="—">
