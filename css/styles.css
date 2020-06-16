@@ -186,7 +186,7 @@ a:hover {
 .caps {
   text-transform: uppercase;
   letter-spacing: 0;
-  -ms-font-feature-settings: "smcp", "c2sc";
+  /* -ms-font-feature-settings: "smcp", "c2sc"; */
   font-variant-caps: all-small-caps;
 }
 
@@ -221,6 +221,7 @@ li {
   color: #ED3F2123;
   font-weight: bold;
   font-family: fantasy;
+  mix-blend-mode: luminosity;
 }
 
 /* footer properties */
@@ -293,7 +294,6 @@ button{
   overflow: visible;
 }
 
-@media (min-width: 768px)
 
 .bd-clipboard {
     display: block;
@@ -337,7 +337,14 @@ button{
   opacity: 1;
 }
 
-
+.rr:hover{
+  mix-blend-mode: luminosity;
+    transition: all 0.5s ease-in-out 0s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
 
 
   
@@ -375,4 +382,29 @@ a:hover, a:focus {color:#2793a8;}
   text-align: center;
 } */
 
+.known{
+  cursor: pointer;
+}
+
+.credits, .maintainer {
+  font-weight: 400;
+  font-family: lato,sans-serif;
+  font-size: 20px;
+  color: #16a085;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.love {
+  display: inline-block;
+  position: relative;
+  top: .2em;
+  font-size: 1.4em;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+  -webkit-animation: love .5s infinite linear alternate-reverse;
+  -moz-animation: love .5s infinite linear alternate-reverse;
+  animation: love .5s infinite linear alternate-reverse;
+}
 
