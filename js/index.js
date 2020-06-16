@@ -9,7 +9,7 @@ for (var i = 0; i < copyButton; i++) {
 document.querySelectorAll(".btn-clipboard")[i].addEventListener("click", function () {
   alert("copied!");
 });
-  
+
 }
 
 function myFunction() {
@@ -34,5 +34,3 @@ $("h6").addClass("glow-anime");
 setTimeout(function() {
   $("h6").addClass("glow-anime");
 }, 200);
-
-
