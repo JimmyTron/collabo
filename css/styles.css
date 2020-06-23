@@ -7,12 +7,18 @@ body {
   overflow-x: hidden;
   /* height: 100vh; */
   margin: 0 8rem;
+  
 }
 
 #body {
   /* background-color: #8261CB; */
   padding: 1rem;
 }
+/* #header{
+  background-image: url("images/gnt.png");
+  /* color: #000; */
+  /* background-color: #2793a8; */
+/* } */ */
 
 code {
   /* background-color: #E5EFF5; */
@@ -22,6 +28,7 @@ code {
 }
 
 .terminal {
+  background-image: url("images/gnt.png");
   width: 100%;
   box-sizing: border-box;
   z-index: 1;

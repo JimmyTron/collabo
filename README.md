@@ -28,4 +28,4 @@
 
 [Contribute](https://kisumu-poly-tech-hub.github.io/collaboration-tools/ "tech-hub.io")
 
-> This project exists thanks to all contributors.
+> This project exists thanks to  contributors.
