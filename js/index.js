@@ -29,8 +29,18 @@ function myFunction() {
 
 
 
+function blink() {
+  $(".termination").fadeOut() ;
+  // setTimeout("bkink()", 500);
+  $(".termination").fadeIn();
+}
 
-$("h6").addClass("glow-anime");
-setTimeout(function() {
-  $("h6").addClass("glow-anime");
-}, 200);
+
+setInterval(blink, 500);
+
+
+
+// $("h6").addClass("glow-anime");
+// setTimeout(function() {
+//   $("h6").addClass("glow-anime");
+// }, 200);

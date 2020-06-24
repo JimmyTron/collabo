@@ -10,8 +10,6 @@
   <!-- css stylesheet -->
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css"
-   rel="stylesheet">
    <link rel="stylesheet"
    href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
@@ -23,14 +21,14 @@
 </head>
 
 <!--todo:  Github cli web -->
-https://cli.github.com/
+<!-- https://cli.github.com/ -->
 <!-- --todo   -->
 <body>
 
-  <section id="header" class="sm-col-12">
+ 
 
 
-    <h1>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
+    <h1 class="lh-condensed">Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </h1>
     <!-- <h4> <em>A tutorial introduction to git. </em> </h4> -->
     <p class="lead"> <em>Learn Version Control with Git & Github to Be A <span class="pro">Pro</span>grammer </em> is an
       introduction to <strong>git</strong> for absolute beginners,this tutorial is designed
@@ -41,7 +39,7 @@ https://cli.github.com/
       project must be tracked. Version Control records each change made to a file [or a group
       of files] and offers a way to undo or roll back each change.</p>
 
-    <p class="lead md-col-4 mx-auto left-align "><img class="media-image rounded" asnyc="asnyc" src="images/gitlog.png"
+    <p class="lead md-col-4 mx-auto left-align "><img class="gitlog " asnyc="asnyc" src="images/gitlog.png"
         alt="Git image"> Git is the free and <em title="Everyone is privy to the source code">open source</em>
       distributed version control
       system
@@ -52,10 +50,19 @@ https://cli.github.com/
       its features for use offline and without a central server. <br>
       GitHub provides the collaboration hub at the center of VCS that enable teams of developers to be more agile, collaborate more
     efficiently in public and private reositories.</p>
-    <img class="media-image" src="images/g&t.png" alt="open source image">
-  </section>
 
-  <section id="installation">
+    <p><img class="gitlog" src="images/icon-cli.svg" alt=""> <label for="">GitHub</label> 
+      <span title="Command Line Interface"> </span> CLI</span> is ready for your terminal. It’s free and open source and now available 
+      in <span title="Beta" class="Label Label--outline Label--outline-green">Beta</span>.
+       You don't need to use a browser to check the small changes made in the repository.
+       GitHub recently announced GitHub CLI; a first-party command line tool for interfacing 
+       with GitHub from the command line. With GitHub CLI, developers can check the status of GitHub issues
+        and pull requests, search for a specific issue or PR, 
+       create/fork a repo, or create new issues and pull requests right from the command line
+     </p>
+    <img class="media-image" src="images/g&t.png" alt="open source image">
+
+
     <blockquote cite="http://" class="mb-0">
       LET'S GET STARTED
     </blockquote>
@@ -64,7 +71,7 @@ https://cli.github.com/
       by installing git onto our system.<br>
       For windows users you may proceed to <a href="https://windows.github.com" title="Download for windows">git for
         windows</a>, head over to downloads the choose the latest version or any that you need. After the download go through
-        the installation wizard, make sure <strong>Git Bash</strong> is checked and the rest you may keep as default.
+        the installation wizard, make sure <strong>Git Bash</strong> is checked and the rest you may keep as default. <br>
         <img src="images/gitwinbash.png" alt="checked Git Bash"> <br>
       <!-- "https://mac.github.com"  -->
       <br>
@@ -79,9 +86,8 @@ https://cli.github.com/
       For macOS users proceed by:
       <code>brew install git</code><br>
     </p><img src="images/macinst.png" alt="macOS installation image">
-  </section>
+ 
 
-  <section id="body">
 
 
     <p class="lead">After the installation we'll create and setup our github account. click here to create a free <a
@@ -93,7 +99,9 @@ https://cli.github.com/
 
     <div class="col col-12 sm-col-6 p2
        terminal h6 md-h5  jumbotron jumbotron-fluid">
-
+       <div class="d-inline-block circle bg-white mr-1 mac" ></div>
+       <div class="d-inline-block circle bg-white mr-1 mac" ></div>
+       <div class="d-inline-block circle bg-white mr-1 mac  " ></div> <br>
        <div class="bd-clipboard">
          <button type="button"
         class="btn-clipboard" title="Copy to clipboard" onclick="myFunction()"
@@ -118,8 +126,10 @@ https://cli.github.com/
   <!-- <button onclick="myFunction()">Copy text</button> -->
 
 
-  <div class="col col-12 sm-col-6 p2 js-cli--demo terminal h6 md-h5   ">
-
+  <div class="col col-12 sm-col-6 p2 js-cli--demo terminal h6 md-h5">
+    <div class="d-inline-block circle bg-white mr-1 mac" ></div>
+    <div class="d-inline-block circle bg-white mr-1 mac" ></div>
+    <div class="d-inline-block circle bg-white mr-1 mac" ></div> <br>
     <button type="button"
     class="btn-clipboard" title="Copy to clipboard" onclick="myFunction()"
     data-original-title="Copy to clipboard">Copy</button>
@@ -147,7 +157,7 @@ https://cli.github.com/
 
     <p class="lead">The next command opens a text editor with a file name created previously, you may use any text
       editor of your choice eg. <em><code>Nano, Vim, Pico</code>, </em>
-      or even the most basic but out of the <abbr class="caps" title="Command Line Interface">CLI</abbr> called
+      or even the most basic but out of the <abbr  title="Command Line Interface">CLI</abbr> called
       notepad<code>++</code>.
       Inside the file, you may write a short story of your life or most interesting code you've ever write in your life
       without bugs. However,
@@ -201,76 +211,110 @@ https://cli.github.com/
       manner over the network to the requestor’s local disk. Lastly, <code>clone</code> switches to a branch named
       master,
       as the current working copy.</p>
-  </section>
+ 
+
   <hr class="hr">
-  <h2 class="display-4 gitcommand">Common Git commands used in various situations</h2>
-  <p class="lead">We'll continue with the rest of the commads and many other more in details.</p>
-  <ol><code>
+  <h2 class="display-4 gitcommand col-12 col-lg-4 mb-5">Common Git commands used in various situations</h2>
+  <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+     <ol>
       <li>git clone</li>
       <li>git init</li>
       <li>git add</li>
       <li>git mv</li>
       <li>git reset</li>
-      <li>git rm</li>
-      <li>git bisect</li>
-      <li>git grep</li>
-      <li>git log</li>
-      <li>git show</li>
+     </ol>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+       <ol start="6">
+        <li>git rm</li>
+        <li>git bisect</li>
+        <li>git grep</li>
+        <li>git log</li>
+        <li>git show</li>
+       </ol>
+      </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+     <ol start="11">
       <li>git status</li>
       <li>git branch</li>
       <li>git checkout</li>
       <li>git commit</li>
       <li>git diff</li>
+     </ol>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+      <ol start="16">
       <li>git merge</li>
       <li>git rebase</li>
       <li>git tag</li>
       <li>git fetch</li>
       <li>git pull</li>
       <li>git push</li>
-    </code>
-  </ol>
+      </ol>
+      </div>
+
+    </div>
 
 
+  <dir class="container-xl px-3 px-md-4 "> 
+ 
+    <p class="lead">Git commands can be explicitly grouped according to their functions as shown below.</p>
+
+  <div class="list-unstyled col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+    <h3 class="mb-3 text-mono text-gray-light text-normal">Start a working area</h3>
+    <ul class="list-style-none f5">
+      <li class="lh-condensed mb-3"> <code>clone</code> - Retrieve an entire repository from a hosted location via URL.</li>
+      <li class="lh-condensed mb-3"><code>init</code> - Initialize an existing directory as a Git repository.</li>
+    </ul> 
+  </div>
+
+  <div class="list-unstyled col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+    <h3 class="mb-3 text-mono text-gray-light text-normal">Work on the current change</h3>
+    <ul class="list-style-none f5">
+      <li class="lh-condensed mb-3"><code>add</code> - Add a file as it looks now to your next commit (stage).</li>
+      <li class="lh-condensed mb-3"><code>mv</code> - Change an existing file path and stage the move.</li>
+      <li class="lh-condensed mb-3"><code>reset</code> - Unstage a file while retaining the changes in working directory.</li>
+    </ul>
+  </div>
+
+  <div class="list-unstyled col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+    <h3 class="mb-3 text-mono text-gray-light text-normal">Examine the history and state </h3>
+    <ul class="list-style-none f5">
+      <li class="lh-condensed mb-3"><code>bisect</code> - Use binary search to find the commit that introduced a bug.</li>
+      <li class="lh-condensed mb-3"><code>grep</code> - Print lines matching a pattern.</li>
+      <li class="lh-condensed mb-3"><code>log</code> - Show the commit history for the currently active branch.</li>
+      <li class="lh-condensed mb-3"><code>show</code> - Show any object in Git in human-readable format.</li>
+      <li class="lh-condensed mb-3"><code>status</code> - Show modified files in working directory, staged for your next commit.</li>
+    </ul>
+  </div>
 
 
-  <ul class="list-unstyled">
-    <h3>Start a working area</h3>
-    <li> <code>clone</code> - Retrieve an entire repository from a hosted location via URL.</li>
-    <li><code>init</code> - Initialize an existing directory as a Git repository.</li>
-  </ul>
-  <ul class="list-unstyled">
-    <h3>Work on the current change</h3>
-    <li><code>add</code> - Add a file as it looks now to your next commit (stage).</li>
-    <li><code>mv</code> - Change an existing file path and stage the move.</li>
-    <li><code>reset</code> - Unstage a file while retaining the changes in working directory.</li>
-  </ul>
+  <div class="list-unstyled col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+    <h3 class="mb-3 text-mono text-gray-light text-normal">Grow, mark and tweak your common history</h3>
+    <ul class="list-style-none f5">
+      <li class="lh-condensed mb-3"><code>branch</code> - List your branches. a * will appear next to the currently active branch.</li>
+      <li class="lh-condensed mb-3"><code>checkout</code> - Switch to another branch and check it out into your working directory.</li>
+      <li class="lh-condensed mb-3"><code>commit</code> - Record your staged content as a new commit snapshot.</li>
+      <li class="lh-condensed mb-3"><code>diff</code> - Show what is changed but not staged, etc.</li>
+      <li class="lh-condensed mb-3"><code>merge</code> - Join the specified branch’s history into the current one.</li>
+      <li class="lh-condensed mb-3"><code>tag</code> - Create, list, delete or verify a tag object signed with GPG.</li>
+    </ul>
+  </div>
 
-  <ul class="list-unstyled">
-    <h3>Examine the history and state </h3>
-    <li><code>bisect</code> - Use binary search to find the commit that introduced a bug.</li>
-    <li><code>grep</code> - Print lines matching a pattern.</li>
-    <li><code>log</code> - Show the commit history for the currently active branch.</li>
-    <li><code>show</code> - Show any object in Git in human-readable format.</li>
-    <li><code>status</code> - Show modified files in working directory, staged for your next commit.</li>
-  </ul>
+  <div class="list-unstyled col-6 col-sm-3 col-lg-2 mb-6 mb-md-2 pr-3 pr-md-0 pl-md-4">
+    <h3 class="mb-3 text-mono text-gray-light text-normal">Collaborate</h3>
+    <ul class="list-style-none f5">
+      <li class="lh-condensed mb-3"><code>fetch</code> - Download all the branches from that Git remote.</li>
+      <li class="lh-condensed mb-3"><code>pull</code> - Fetch and merge any commits from the tracking remote branch.</li>
+      <li class="lh-condensed mb-3"><code>push</code> - Update local branch commits to the remote repository branch.</li>
+    </ul>
+  </div>
 
-
-  <ul class="list-unstyled">
-    <h3>Grow, mark and tweak your common history</h3>
-    <li><code>branch</code> - List your branches. a * will appear next to the currently active branch.</li>
-    <li><code>checkout</code> - Switch to another branch and check it out into your working directory.</li>
-    <li><code>commit</code> - Record your staged content as a new commit snapshot.</li>
-    <li><code>diff</code> - Show what is changed but not staged, etc.</li>
-    <li><code>merge</code> - Join the specified branch’s history into the current one.</li>
-    <li><code>tag</code> - Create, list, delete or verify a tag object signed with GPG.</li>
-  </ul>
-  <ul class="list-unstyled">
-    <h3>Collaborate</h3>
-    <li><code>fetch</code> - Download all the branches from that Git remote.</li>
-    <li><code>pull</code> - Fetch and merge any commits from the tracking remote branch.</li>
-    <li><code>push</code> - Update local branch commits to the remote repository branch.</li>
-  </ul>
-
+</dir>
 
 
   <hr class="hr">
@@ -348,64 +392,60 @@ command line</span></span>
 
 <div class=" col-12  rightter col-sm-12">
   <img asnyc="asnyc" src="images/gitlog.png"
-   class="media-image rounded rounded-circle">
+   class="gitlog">
    <p class="media-body h6 black muted lead "><strong role="button"
      class="block before-content" before="—">
 
      Jimmy Tron</strong>
 
-     <small class="text-muted text-center">developer &amp; IT techie</small>
+     <small class="text-muted text-center text-gray-light">developer &amp; IT techie</small>
    </p>
 
 </div>
 
 <div class=" col-12  rightter col-sm-12">
   <img asnyc="asnyc" src="images/gitlog.png"
-   class="media-image rounded rounded-circle">
+   class="gitlog">
    <p class="media-body h6 muted lead"><strong  role="button" before="—"
      class="block before-content">
      Kherld Hussein</strong>
 
-     <small class="text-muted text-center">developer &amp; adventure seeker</small>
+     <small class="text-muted text-center text-gray-light">developer &amp; adventure seeker</small>
 
 
    </p>
 
 </div>
 
-<p class="tech lead">Copyright &copy; 2020 tech-hub.io </p>
+<p class="tech text-gray-light">Copyright &copy; 2020 tech-hub.io </p>
   </footer>
 
   </section>
 
+
+ 
   <!-- script sheet -->
-  <!-- <script src="js/index.js" charset="utf-8"></script>
+  <script src="js/index.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
   crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-   crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
   crossorigin="anonymous">
   </script> -->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-
    crossorigin="anonymous">
-
    </script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-
  integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-
- crossorigin="anonymous"></script>
+ crossorigin="anonymous">
+</script>
 
 </body>
 
