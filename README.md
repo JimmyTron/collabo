@@ -28,7 +28,7 @@
 [Contribute](https://kisumu-poly-tech-hub.github.io/collaboration-tools/ "tech-hub.io")
 
 
-> This project exists thanks to all the people who contribute.
+> This project exists thanks to all the contributors.
 
 
   
