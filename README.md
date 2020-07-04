@@ -8,7 +8,7 @@
 |  [![Telegram](https://telegram.org/img/t_logo.png)](https://t.me/joinchat/Fkwt1xJoduMWrku8r-JtqA)
 
 <p> Before we start, we recommend to use   linux OS       
-  i.e any distribution </p>
+  i.e any distribution </p> , windows & macOS
 
 
 *  launch terminal ``` ctrl + Alt + T ```
