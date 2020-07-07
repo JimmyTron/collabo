@@ -1,3 +1,4 @@
+
 ---
 > # VERSION CONTROL 
 ---
@@ -6,9 +7,19 @@
 | Telegram Chat
 |---|
 |  [![Telegram](https://telegram.org/img/t_logo.png)](https://kisumu-poly-tech-hub.github.io/collaboration-tools/)
+=======
+
+# VERSION CONTROL WITH GIT :gear:
+---
+---
+
+| Join Our Community
+|---|
+|  [![Telegram](https://telegram.org/img/t_logo.png)](https://t.me/joinchat/Fkwt1xJoduMWrku8r-JtqA)
+
 
 <p> Before we start, we recommend to use   linux OS       
-  i.e any distribution </p>
+  i.e any distribution </p> , windows & macOS
 
 
 *  launch terminal ``` ctrl + Alt + T ```
@@ -26,4 +37,10 @@
 
 
 [Contribute](https://kisumu-poly-tech-hub.github.io/collaboration-tools/ "tech-hub.io")
+
+
+
+> This project exists thanks to all the contributors.
+
+
   
