@@ -7,7 +7,7 @@
 | Telegram Chat
 |---|
 |  [![Telegram](https://telegram.org/img/t_logo.png)](https://kisumu-poly-tech-hub.github.io/collaboration-tools/)
-=======
+
 
 # VERSION CONTROL WITH GIT :gear:
 ---
@@ -19,7 +19,7 @@
 
 
 <p> Before we start, we recommend to use   linux OS       
-  i.e any distribution </p> , windows & macOS
+  i.e any distribution </p>  windows & macOS
 
 
 *  launch terminal ``` ctrl + Alt + T ```
