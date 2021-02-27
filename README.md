@@ -4,9 +4,10 @@
 ---
 ---
 
-| Telegram Chat
-|---|
-|  [![Telegram](https://telegram.org/img/t_logo.png)](https://kisumu-poly-tech-hub.github.io/collaboration-tools/)
+
+
+[git index](https://kisumu-poly-tech-hub.github.io/collaboration-tools/)
+
 
 
 # VERSION CONTROL WITH GIT :gear:
